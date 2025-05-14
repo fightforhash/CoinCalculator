@@ -43,7 +43,16 @@ It uses a backtracking (DFS) algorithm to enumerate all valid combinations, then
 ```bash
 git clone https://github.com/fightforhash/CoinCalculator.git
 ```
+
 ## Usage
+
+```bash
+# On Windows:
+python HMART.py
+
+# On macOS / Linux:
+python3 HMART.py
+```
 
 You will be prompted to:
 - Enter quantities for each bill (\$100, \$50, \$20, \$10, \$5, \$2, \$1)
@@ -81,7 +90,7 @@ def find_all_combinations(denom_list, index, target_cents, used_counts, solution
         )
     used_counts[index] = 0
 ```
-### 2. Measuring evenness using standard deviation
+### 2. Measuring “Evenness” via Standard Deviation
 
 ```python
 mean = sum(usage_counts) / len(usage_counts)
@@ -113,7 +122,7 @@ We solve two independent subproblems:
 
 - Form BILL_TARGET dollars using filtered bills
 - Form COIN_TARGET dollars using filtered coins
-- 
+  
 Each uses the same backtracking + standard-deviation logic, then we merge results.
 
 
