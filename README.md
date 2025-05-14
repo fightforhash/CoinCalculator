@@ -130,7 +130,7 @@ Each uses the same backtracking + standard-deviation logic, then we merge result
 
 MIT License
 
-Copyright (c) 2024 Thomas Ha
+Copyright (c) 2025 Thomas Ha
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
