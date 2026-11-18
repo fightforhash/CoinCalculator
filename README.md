@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/logo.svg" alt="Coin Calculator logo" width="520">
+</p>
+
 # Bill & Coin Splitter
 
 A Python CLI tool that helps you split a target dollar amount into bills and coins as evenly as possible.  

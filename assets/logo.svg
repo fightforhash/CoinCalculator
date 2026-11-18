@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="t">
+  <title id="t">Coin Calculator logo: three coin stacks of equal height under a level line</title>
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="38%" r="80%">
+      <stop offset="0" stop-color="#17392d"/>
+      <stop offset="1" stop-color="#0b1d16"/>
+    </radialGradient>
+    <linearGradient id="coin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd772"/>
+      <stop offset="1" stop-color="#e2a93b"/>
+    </linearGradient>
+    <g id="c">
+      <rect x="-46" y="-9" width="92" height="18" rx="9" fill="#b07d22"/>
+      <ellipse cx="0" cy="-9" rx="46" ry="11" fill="url(#coin)"/>
+      <ellipse cx="0" cy="-9" rx="32" ry="7" fill="none" stroke="#c9922f" stroke-width="2.5"/>
+    </g>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)"/>
+
+  <!-- Three even stacks: the "most balanced change" the DFS search looks for. -->
+  <g transform="translate(290 300)"><use href="#c"/><use href="#c" y="-24"/><use href="#c" y="-48"/><use href="#c" y="-72"/></g>
+  <g transform="translate(400 300)"><use href="#c"/><use href="#c" y="-24"/><use href="#c" y="-48"/><use href="#c" y="-72"/></g>
+  <g transform="translate(510 300)"><use href="#c"/><use href="#c" y="-24"/><use href="#c" y="-48"/><use href="#c" y="-72"/></g>
+
+  <!-- The level line across the tops. -->
+  <line x1="214" y1="196" x2="586" y2="196" stroke="#7fe3b0" stroke-width="5" stroke-dasharray="14 10" stroke-linecap="round"/>
+  <circle cx="400" cy="160" r="15" fill="none" stroke="#7fe3b0" stroke-width="5"/>
+  <path d="M 393 160 L 399 166 L 409 154" fill="none" stroke="#7fe3b0" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <text x="400" y="398" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="62" font-weight="800" letter-spacing="-1.5" fill="#ffffff">Coin Calculator</text>
+  <text x="400" y="440" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" fill="#a9c9bb">change, split as evenly as possible</text>
+</svg>
